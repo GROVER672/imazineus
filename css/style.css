@@ -1513,7 +1513,7 @@ span.custom-next {
 
 /* .slider-cardss img, */
 .slider-cardss video {
-  width: 100%;
+  width: 100%; 
   height: 510px;
   border-radius: 20px;
   object-fit: cover;
