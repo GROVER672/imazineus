@@ -1280,11 +1280,7 @@ span.custom-next {
     width: 100%;
   }
 }
-
-
-
 /* sec6 */
-
 /* teams */
 .teams {
   color: black;
@@ -1324,7 +1320,6 @@ span.custom-next {
 .teams .team-card-text p {
   margin-top: -8px;
   color: #9c9c9c;
-  font-weight: bold;
 }
 .sliders-cardss {
   margin-left: 30px;
