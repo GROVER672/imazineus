@@ -1288,7 +1288,7 @@ span.custom-next {
   padding-top: 100%;
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: 120vh;
   overflow: hidden;
   display: flex;
   align-items: start;
@@ -1501,7 +1501,7 @@ span.custom-next {
     font-size: 45px;
 }
 .clients-text p {
-  font-size: 14px;
+  font-size: 13px;
 }
 .client-reviews-image {
   /* margin-left: 30px; */
@@ -1915,8 +1915,24 @@ align-items: center;
   display: flex;
   gap: 30px;
 }
+.contact-profiles a{
+  text-decoration: none;
+color: white;
+}
 
 @media (max-width:749px){
+  .section10 {
+    color: white;
+    background-color: #0a0a0a;
+    background-image: 
+      radial-gradient(circle at 30% 40%, #000000, transparent 40%),
+      radial-gradient(circle at 60% 60%, #0b03a5, transparent 50%),
+      radial-gradient(circle at 50% 80%, #0aebcd, transparent 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll; /* Important for mobile */
+    background-blend-mode: screen;
+  }
   .contact-text h3 {
     margin-top: -10px;
     font-weight: 500;
@@ -1938,7 +1954,6 @@ align-items: center;
 }
 
 .contact-profiles {
-  /* flex-direction: column; */
   gap: 15px;
 }
 
@@ -1949,9 +1964,8 @@ align-items: center;
 
 .contact-works h3 {
   margin-top: 0;
+  font-size: 19px;
 }
-
-h3 {}
 
 .contact-works {
   margin-top: 30px;
@@ -1962,5 +1976,6 @@ h3 {}
 @media (max-width:500px){
   .contact-text h3 {
     font-size: 19px;
+    font-weight: bolder;
 }
 }
