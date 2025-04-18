@@ -187,6 +187,7 @@ function toggleanswer(element) {
     icon.classList.add('fa-plus');
   }
 }
+ 
 
 // window.addEventListener("load", () => {
 //   console.log("onloaddd")

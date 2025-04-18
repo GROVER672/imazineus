@@ -836,14 +836,20 @@ video.desktop-video_cust {
   background: #ffffff;
   border-radius: 40px;
 }
-.video-read video {
-  border-radius: 20px;
-  height: 100%;
-  width: 100%;
-}
 .video-read {
   max-width: 32%;
   width: 100%;
+  height: 560px;
+  border-radius: 20px; /* Parent container ko border-radius dena */
+  overflow: hidden; /* Hidden overflow to maintain border-radius */
+}
+
+.video-read iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px; /* iframe ko border-radius dena */
+  border: none; /* Remove iframe border */
+  object-fit: cover; /* Ensures video fits properly in the container */
 }
 .text-read {
   max-width: 68%;
@@ -1532,7 +1538,7 @@ span.custom-next {
   color: #fff;
 }
 
-.slider-cardss video {
+.slider-cardss iframe {
   width: 100%;
   height: 510px;
   border-radius: 20px;
@@ -1540,17 +1546,7 @@ span.custom-next {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-.slider-cardss .iframes {
-  width: 100%;
-  height: 510px;
-  border-radius: 20px;
-  object-fit: cover;
-  background-color: rgba(255, 255, 255, 0.08);
-}
-.slider-cardss video {
-  transition: filter 0.5s ease;
-}
-.slider-cardss:hover video {
+.slider-cardss:hover iframe {
   filter: grayscale(1);
 }
 .slider-cardss {
@@ -1606,7 +1602,7 @@ span.custom-next {
     display: block;
     width: 100% !important;
   }
-  .slider-cardss video {
+  .slider-cardss iframe {
     width: 100%;
     height: 700px;
   }
