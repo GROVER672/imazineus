@@ -189,27 +189,7 @@ function toggleanswer(element) {
 }
  
 
-// window.addEventListener("load", () => {
-//   console.log("onloaddd")
-//   const video = document.createElement("video");
-//   video.autoplay = true;
-//   video.muted = true;
-//   video.loop = true;
-//   video.playsInline = true;
-//   video.className = "absolute inset-0 w-full h-full object-cover z-0 hero-video";
  
-//   const source = document.createElement("source");
-//   source.src = "./image/imazineus bg video .webm";
-//   source.type = "video/webm";
-
-//   video.appendChild(source);
-
-//   const hero = document.querySelector(".hero-section");
-//   const fallback = document.getElementById("fallback-img");
-//   hero.insertBefore(video, fallback);
-//   fallback.remove();
-// });
-
 
  
 

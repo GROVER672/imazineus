@@ -42,6 +42,11 @@ p {
   z-index: 99999;
   transform: translate(-50%, -50%);
 }
+@media (max-width:768px){
+  .cursor{
+    display: none;
+  }
+}
 .section {
   position: relative;
   width: 100%;
@@ -660,7 +665,7 @@ video.desktop-video_cust {
   }
   .card img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .card {
     border: 1px solid rgb(0, 0, 0);
@@ -669,6 +674,8 @@ video.desktop-video_cust {
     text-align: center;
     background-color: #ffffff;
     height: 425px;
+    transition: none;
+    transform: none;
   }
 
   .card h3 {
@@ -840,16 +847,16 @@ video.desktop-video_cust {
   max-width: 32%;
   width: 100%;
   height: 560px;
-  border-radius: 20px; /* Parent container ko border-radius dena */
-  overflow: hidden; /* Hidden overflow to maintain border-radius */
+  border-radius: 20px; 
+  overflow: hidden; 
 }
 
 .video-read iframe {
   width: 100%;
   height: 100%;
-  border-radius: 20px; /* iframe ko border-radius dena */
-  border: none; /* Remove iframe border */
-  object-fit: cover; /* Ensures video fits properly in the container */
+  border-radius: 20px; 
+  border: none; 
+  object-fit: cover; 
 }
 .text-read {
   max-width: 68%;
@@ -978,7 +985,7 @@ span.custom-next {
 .slick-next span svg {
   width: 30px;
   height: 30px;
-  stroke: #ffffff; /* Change arrow color */
+  stroke: #ffffff;
 }
 .slick-next:before,
 .slick-prev:before {
@@ -1328,7 +1335,7 @@ span.custom-next {
 }
 .coustom-image img {
   width: 100%;
-  height: 500px;
+  height: 530px;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -1602,13 +1609,21 @@ span.custom-next {
     display: block;
     width: 100% !important;
   }
+  .slider-cardss {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-left: 0 !important;
+  }
+
   .slider-cardss iframe {
     width: 100%;
     height: 700px;
+    border: none;
+    border-radius: 20px;
+    object-fit: cover; 
   }
-  .slider-cardss {
-    margin-left: 15px !important;
-  }
+
   .customs-text h1 {
     font-size: 45px;
   }
